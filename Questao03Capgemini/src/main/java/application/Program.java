@@ -19,9 +19,7 @@ public class Program {
 		System.out.println("Entre com a frase a ser encriptado:");
 		String frase = sc.nextLine();
 		
-		
-		Encriptar.Encripar(frase);
-		
+		System.out.println(Encriptar.Encripar(frase));
 		sc.close();
 
 	}

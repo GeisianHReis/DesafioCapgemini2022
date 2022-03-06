@@ -9,22 +9,15 @@ public class Program {
 
 	/**
 	 * Método principal 
-	 * Pega o vetor de numeros interios e compara seus elementos para verificar a diferença entre eles. 
+	 * Pega o vetor de numeros interios, a direfença que deseja ser observada e faz a chamada do metodo 
 	 * 
 	 */
 	public static void main(String[] args) {
-		int [] numeros = {3, 6, 4, 7, 9};
-		
+		int[] numeros = {3, 6, 4, 7, 9};
 		int diferenca = 2;
-		int quantidade = 0;
 		
-		for (int x = 0; x < numeros.length; x++) {
-			for (int y = 0; y < numeros.length; y++) {
-				if((numeros[x] - numeros[y]) == diferenca) {
-					quantidade++;
-				}
-			}
-		}
+		int quantidade = Comparador.Verificacao(numeros, diferenca);
+		
 		System.out.println(quantidade);
 		
 	}

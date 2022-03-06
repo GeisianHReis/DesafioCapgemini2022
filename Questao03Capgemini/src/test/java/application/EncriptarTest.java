@@ -8,7 +8,10 @@ public class EncriptarTest {
 
 	@Test
 	public void testEncripar() {
-		fail("Not yet implemented");
+		String frase = ("tenha um bom dia");
+		String fraseEncriptada = Encriptar.Encripar(frase);
+		
+		assertEquals("taoa eum nmd hbi " ,fraseEncriptada);
 	}
 
 }
